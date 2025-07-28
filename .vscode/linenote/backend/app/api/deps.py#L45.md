@@ -1,0 +1,1 @@
+# This handles the edge case where a user was deleted but their token is still valid.

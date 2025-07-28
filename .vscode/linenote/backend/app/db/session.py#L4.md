@@ -1,0 +1,1 @@
+This is a good practice for production. It checks if a database connection is still alive before handing it to your application, which helps prevent errors after long periods of inactivity.

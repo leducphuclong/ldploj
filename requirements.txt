@@ -1,0 +1,13 @@
+fastapi
+uvicorn[standard]
+pydantic[email]
+pydantic-settings # The new standard for settings management
+sqlalchemy[asyncio]
+asyncpg # The async driver for PostgreSQL. Use 'aiomysql' for MySQL.
+alembic
+
+# Security
+passlib[bcrypt]
+python-jose[cryptography]
+psycopg2-binary
+

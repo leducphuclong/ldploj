@@ -1,0 +1,117 @@
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  /* --- CHANGE: Switched to a light color scheme --- */
+  color-scheme: light;
+  color: #213547; /* Dark text color */
+  background-color: #ffffff; /* White background */
+}
+
+body {
+  margin: 0;
+  display: flex;
+  place-items: center;
+  min-width: 320px;
+  min-height: 100vh;
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+header h1 {
+  font-size: 2.5em;
+  line-height: 1.1;
+  color: #646cff; /* This accent color works well on light backgrounds */
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+/* Form Styles */
+.post-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 1.5rem;
+  /* --- CHANGE: Light border and background --- */
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  background-color: #f9f9f9; /* A very light gray to distinguish the form */
+}
+
+.post-form h2 {
+  margin-top: 0;
+  text-align: left;
+}
+
+.post-form input,
+.post-form textarea {
+  padding: 0.8rem;
+  border-radius: 6px;
+  /* --- CHANGE: Light input styles --- */
+  border: 1px solid #ccc;
+  background-color: #fff;
+  color: #213547; /* Use root text color */
+  font-size: 1em;
+}
+
+.post-form textarea {
+  min-height: 100px;
+  resize: vertical;
+}
+
+.post-form button {
+  padding: 0.8rem 1.2rem;
+  border-radius: 8px;
+  border: 1px solid transparent;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  /* --- CHANGE: Light button styles --- */
+  background-color: #f0f0f0;
+  cursor: pointer;
+  transition: border-color 0.25s;
+}
+.post-form button:hover {
+  border-color: #646cff;
+}
+.post-form button:disabled {
+  /* --- CHANGE: Light disabled style --- */
+  background-color: #e0e0e0;
+  cursor: not-allowed;
+  opacity: 0.7;
+}
+
+/* Post List Styles */
+.post-list {
+  text-align: left;
+}
+
+.post-card {
+  /* --- CHANGE: Light card with a subtle shadow --- */
+  background-color: #ffffff;
+  border: 1px solid #e0e0e0;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+  border-radius: 8px;
+  padding: 1rem 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.post-card h3 {
+  margin-top: 0;
+  /* --- CHANGE: Using the main accent color for better contrast --- */
+  color: #646cff;
+}
+
+.error {
+  color: #ff4d4d; /* A slightly different red for good contrast on white */
+}
